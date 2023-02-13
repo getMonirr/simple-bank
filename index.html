@@ -8,10 +8,42 @@
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <h1>WellCome to Simple Bank Calculation</h1>
+<body class="container mx-auto">
+    <header class="text-center my-5">
+        <h1 class="text-5xl ">WellCome to <span class="text-indigo-400">Simple Bank</span> Calculation</h1>
     </header>
+    <main class="space-y-12">
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-teal-500 p-8 text-white rounded-lg">
+                    <h2 class="text-2xl">Deposit:</h2>
+                    <p class="text-4xl">$<span>00</span></p>
+                </div>
+                <div class="bg-cyan-500 p-8 text-white rounded-lg">
+                    <h2 class="text-2xl">Withdraw:</h2>
+                    <p class="text-4xl">$<span>00</span></p>
+                </div>
+                <div class="bg-emerald-500 p-8 text-white rounded-lg">
+                    <h2 class="text-2xl">Current Balance:</h2>
+                    <p class="text-4xl">$<span>00</span></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-sky-500 p-8 space-y-4 rounded-lg">
+                    <h2 class="text-2xl text-white">Deposit Amount</h2>
+                    <input class="block w-3/4" type="number" name="deposit" id="deposit-feild">
+                    <button class="bg-lime-500 p-2 rounded-sm">Deposit</button>
+                </div>
+                <div class="bg-sky-500 p-8 space-y-4 rounded-lg">
+                    <h2 class="text-2xl text-white">Withdraw Amount</h2>
+                    <input class="block w-3/4" type="number" name="deposit" id="deposit-feild">
+                    <button class="bg-lime-500 p-2 rounded-sm">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- bank js -->
     <script src="script/bank.js"></script>
