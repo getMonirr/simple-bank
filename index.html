@@ -17,15 +17,15 @@
             <div class="grid grid-cols-3 gap-4">
                 <div class="bg-teal-500 p-8 text-white rounded-lg">
                     <h2 class="text-2xl">Deposit:</h2>
-                    <p class="text-4xl">$<span>00</span></p>
+                    <p class="text-4xl">$<span id="deposit-amount">00</span></p>
                 </div>
                 <div class="bg-cyan-500 p-8 text-white rounded-lg">
                     <h2 class="text-2xl">Withdraw:</h2>
-                    <p class="text-4xl">$<span>00</span></p>
+                    <p class="text-4xl">$<span id="withdraw-amount">00</span></p>
                 </div>
                 <div class="bg-emerald-500 p-8 text-white rounded-lg">
                     <h2 class="text-2xl">Current Balance:</h2>
-                    <p class="text-4xl">$<span>00</span></p>
+                    <p class="text-4xl">$<span id="current-balance">500</span></p>
                 </div>
             </div>
         </section>
@@ -33,19 +33,20 @@
             <div class="grid grid-cols-2 gap-4">
                 <div class="bg-sky-500 p-8 space-y-4 rounded-lg">
                     <h2 class="text-2xl text-white">Deposit Amount</h2>
-                    <input class="block w-3/4" type="number" name="deposit" id="deposit-feild">
-                    <button class="bg-lime-500 p-2 rounded-sm">Deposit</button>
+                    <input class="block w-3/4 p-1 px-3" type="number" name="deposit" id="deposit-field">
+                    <button id="deposit-btn" class="bg-lime-500 p-2 rounded-sm">Deposit</button>
                 </div>
                 <div class="bg-sky-500 p-8 space-y-4 rounded-lg">
                     <h2 class="text-2xl text-white">Withdraw Amount</h2>
-                    <input class="block w-3/4" type="number" name="deposit" id="deposit-feild">
-                    <button class="bg-lime-500 p-2 rounded-sm">Withdraw</button>
+                    <input class="block w-3/4 p-1 px-3" type="number" name="deposit" id="withdraw-field">
+                    <button id="withdraw-btn" class="bg-lime-500 p-2 rounded-sm">Withdraw</button>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- bank js -->
+    <script src="script/utilities.js"></script>
     <script src="script/bank.js"></script>
 </body>
 </html>
