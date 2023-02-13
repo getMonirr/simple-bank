@@ -11,38 +11,20 @@
 <body class="container mx-auto bg-blue-100">
     <header class="text-center my-5">
         <h1 class="text-5xl ">WellCome to <span class="text-indigo-400 font-bold">Simple Bank</span> Calculation</h1>
+        <h1 class="my-5 text-4xl bg-teal-500 p-4 uppercase">Please Log in</h1>
     </header>
-    <main class="space-y-12">
-        <section class="mt-8">
-            <div class="grid grid-cols-3 gap-4">
-                <div class="bg-teal-500 p-8 text-white rounded-lg">
-                    <h2 class="text-2xl">Deposit:</h2>
-                    <p class="text-4xl">$<span id="deposit-amount">00</span></p>
-                </div>
-                <div class="bg-cyan-500 p-8 text-white rounded-lg">
-                    <h2 class="text-2xl">Withdraw:</h2>
-                    <p class="text-4xl">$<span id="withdraw-amount">00</span></p>
-                </div>
-                <div class="bg-emerald-500 p-8 text-white rounded-lg">
-                    <h2 class="text-2xl">Current Balance:</h2>
-                    <p class="text-4xl">$<span id="current-balance">500</span></p>
-                </div>
+    <main>
+        <form action="" id="submit-form">
+            <div class="space-y-2">
+                <label for="user-email" class="block text-2xl">Enter Your Email:</label>
+                <input class="w-1/2 p-2" type="email" name="email" id="user-email" required>
             </div>
-        </section>
-        <section>
-            <div class="grid grid-cols-2 gap-4">
-                <div class="bg-green-500 p-8 space-y-4 rounded-lg">
-                    <h2 class="text-2xl text-white">Deposit Amount</h2>
-                    <input class="block w-3/4 p-1 px-3 rounded-sm" type="number" name="deposit" id="deposit-field">
-                    <button id="deposit-btn" class="bg-red-200 p-2 rounded-sm">Deposit</button>
-                </div>
-                <div class="bg-rose-400 p-8 space-y-4 rounded-lg">
-                    <h2 class="text-2xl text-white">Withdraw Amount</h2>
-                    <input class="block w-3/4 p-1 px-3 rounded-sm" type="number" name="deposit" id="withdraw-field">
-                    <button id="withdraw-btn" class="bg-green-200 p-2 rounded-sm">Withdraw</button>
-                </div>
+            <div class="space-y-2 mt-5">
+                <label for="user-password" class="block text-2xl">Enter Your password:</label>
+                <input class="w-1/2 p-2" type="password" name="password" id="user-password" required>
             </div>
-        </section>
+            <input id="submit-btn" class="mt-5 py-3 px-4 bg-green-500 text-2xl rounded-lg text-white cursor-pointer" type="submit" value="Submit">
+        </form>
     </main>
 
     <!-- bank js -->
