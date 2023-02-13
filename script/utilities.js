@@ -3,7 +3,7 @@ function getInputFieldValueById (inputId) {
     const inputValue = inputField.value;
     inputField.value = '';
     if(inputValue <= 0 || inputValue === ''){
-        alert(`Don't allow empty or negative number for deposit`);
+        alert(`Don't allow empty or negative number for ${inputId === 'deposit-field' ? 'Deposit' : 'Withdraw'}`);
         return 0;
     }
     return parseFloat(inputValue);
